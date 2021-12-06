@@ -27,7 +27,7 @@ export default function App() {
   const [state, dispatch ] = useReducer(reducer, initialState);
   
   const handleAdd = () => {
-    
+    state = reducer(state, add(5));
   }
 
   return (
