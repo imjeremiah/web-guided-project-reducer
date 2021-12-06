@@ -1,6 +1,6 @@
 import React, { useReducer } from 'react';
 import reducer, { initialState} from './../reducers';
-import { toggleEditing, changeNewTitle } from './../actions';
+import { toggleEditing, changeNewTitle, editTitle } from './../actions';
 
 const Title = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
@@ -15,8 +15,7 @@ const Title = () => {
   }
 
   const handleFormSubmit = () => {
-    // setTitle(newTitleText);
-    // setEditing(false);
+    dispatch(editTitle);
   }
   console.log("0 / 5. Renders application");
 
