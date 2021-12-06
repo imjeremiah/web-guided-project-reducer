@@ -1,6 +1,6 @@
 import React, { useState, useReducer } from 'react';
 import reducer, { initialState} from './../reducers';
-
+import { toggleEditing } from './../actions';
 
 const Title = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
@@ -10,7 +10,7 @@ const Title = () => {
   };
 
   const handleEditing = () => {
-    dispatch({type:"TOGGLE_EDITING"});
+    dispatch(toggleEditing());
   }
 
   const handleFormSubmit = () => {
