@@ -15,9 +15,9 @@ const Title = () => {
   }
 
   const handleFormSubmit = () => {
-    dispatch(editTitle);
+    dispatch(editTitle());
   }
-  console.log("0 / 5. Renders application");
+  console.log("0 / 5. Renders application", state);
 
   return (
     <div>
