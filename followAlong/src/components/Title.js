@@ -18,6 +18,7 @@ const Title = () => {
     // setTitle(newTitleText);
     // setEditing(false);
   }
+  console.log("0 / 5. Renders application");
 
   return (
     <div>
