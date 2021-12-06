@@ -10,7 +10,7 @@ const Title = () => {
   };
 
   const handleEditing = () => {
-    
+    dispatch({type:"TOGGLE_EDITING"});
     // setEditing(!editing);
   }
 
