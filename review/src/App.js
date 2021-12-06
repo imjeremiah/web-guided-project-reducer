@@ -1,23 +1,7 @@
 import React, { useReducer } from "react";
 import reducer, { initialState} from './reducers/calcReducer';
 import "./styles.css";
-
-
-const add = (value) => {
-  return({type:"ADD", payload:value});
-}
-
-const subtract = (value) => {
-  return({type:"ADD", payload:value});
-}
-
-const addToMemory = () => {
-  return({type:"ADD_TO_MEMORY"});
-}
-
-const clear = () => {
-  return({type:"CLEAR"});
-}
+import { add, subtract, addToMemory, clear} from './actions/calcActions';
 
 
 let currentState = initialState;
