@@ -3,6 +3,9 @@ import reducer, { initialState} from './../reducers';
 
 
 const Title = () => {
+  const [state, dispatch] = useReducer(reducer, initialState);
+
+
   const [title, setTitle] = useState('Hello earthlings!');
   const [editing, setEditing] = useState(false);
   const [newTitleText, setNewTitleText] = useState('');
