@@ -1,4 +1,4 @@
-import { TOGGLE_EDITING, CHANGE_NEW_TITLE } from './../actions';
+import { TOGGLE_EDITING, CHANGE_NEW_TITLE, EDIT_TITLE } from './../actions';
 
 export const initialState = {
     title: "Hello earthlings!",
@@ -14,7 +14,9 @@ const reducer = (state, action) => {
         case CHANGE_NEW_TITLE:
             return {...state, newTitleText: action.payload}
         case EDIT_TITLE:
-            return {...state, editing:false, }
+            return {...state, editing:false, title: newTitleText}
+        default:
+            return state;
     }
 
     // if (action.type === TOGGLE_EDITING) {
@@ -23,7 +25,7 @@ const reducer = (state, action) => {
     // } else if (action.type === CHANGE_NEW_TITLE) {
     //     return {...state, newTitleText: action.payload}
     // }
-    return state;
+    // return state;
 }
 
 export default reducer;
