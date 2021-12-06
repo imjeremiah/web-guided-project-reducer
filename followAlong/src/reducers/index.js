@@ -18,14 +18,6 @@ const reducer = (state, action) => {
         default:
             return state;
     }
-
-    // if (action.type === TOGGLE_EDITING) {
-    //     console.log("4. Execute TOGGLE_EDITING.");
-    //     return {...state, editing: !state.editing }
-    // } else if (action.type === CHANGE_NEW_TITLE) {
-    //     return {...state, newTitleText: action.payload}
-    // }
-    // return state;
 }
 
 export default reducer;
