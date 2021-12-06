@@ -7,6 +7,8 @@ export const initialState = {
 }
 
 const reducer = (state, action) => {
+    console.log("3. Entered the reducer.", action);
+    
     if (action.type === TOGGLE_EDITING) {
         return {...state, editing: !state.editing }
     }
