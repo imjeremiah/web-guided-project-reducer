@@ -4,31 +4,29 @@ import reducer, { initialState} from './../reducers';
 
 const Title = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
-  console.log(state);
 
-
-  const [title, setTitle] = useState('Hello earthlings!');
-  const [editing, setEditing] = useState(false);
-  const [newTitleText, setNewTitleText] = useState('');
+  // const [title, setTitle] = useState('Hello earthlings!');
+  // const [editing, setEditing] = useState(false);
+  // const [newTitleText, setNewTitleText] = useState('');
 
   const handleChanges = e => {
-    setNewTitleText(e.target.value);
+    // setNewTitleText(e.target.value);
   };
 
   const handleEditing = () => {
-    setEditing(!editing);
+    // setEditing(!editing);
   }
 
   const handleFormSubmit = () => {
-    setTitle(newTitleText);
-    setEditing(false);
+    // setTitle(newTitleText);
+    // setEditing(false);
   }
 
   return (
     <div>
-      {!editing ? (
+      {!state.editing ? (
         <h1>
-          {title}{' '}
+          {state.title}{' '}
           <i onClick={handleEditing} className="far fa-edit" />
         </h1>
       ) : (
@@ -37,7 +35,7 @@ const Title = () => {
             className="title-input"
             type="text"
             name="newTitleText"
-            value={newTitleText}
+            value={state.newTitleText}
             onChange={handleChanges}
           />
           <button
