@@ -30,6 +30,10 @@ export default function App() {
     dispatch(add(2));
   }
 
+  const handleSubtract = ()=> {
+    dispatch(subtract(5));
+  }
+
   return (
     <div className="App">
       <textarea rows="1" value={state.currentValue} id="total" type="text" name="ans"></textarea>
@@ -37,7 +41,7 @@ export default function App() {
       <button onClick={handleAdd} type="button" className="btn">
         + 2
       </button>
-      <button type="button" className="btn">
+      <button onClick={handleSubtract} type="button" className="btn">
         - 5
       </button>
       <button type="button" className="btn">
