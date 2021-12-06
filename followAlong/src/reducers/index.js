@@ -4,3 +4,6 @@ const initialState = {
     newTitleText: ''
 }
 
+const reducer = (state, action) => {
+
+}
