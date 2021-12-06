@@ -26,11 +26,15 @@ import { add, subtract, addToMemory, clear} from './actions/calcActions';
 export default function App() {
   const [state, dispatch ] = useReducer(reducer, initialState);
   
+  const handleAdd = () => {
+    
+  }
+
   return (
     <div className="App">
       <textarea rows="1" value={state.currentValue} id="total" type="text" name="ans"></textarea>
       <br />
-      <button type="button" className="btn">
+      <button onClick={handleAdd} type="button" className="btn">
         + 2
       </button>
       <button type="button" className="btn">
