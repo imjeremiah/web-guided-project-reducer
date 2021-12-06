@@ -1,6 +1,8 @@
 import React, { useReducer } from "react";
-import reducer from './reducers/calcReducer';
+import reducer, { initialState} from './reducers/calcReducer';
 import "./styles.css";
+
+let currentState = initialState;
 
 
 export default function App() {
