@@ -6,7 +6,7 @@ export const initialState = {
 
 const reducer = (state, action) => {
     if (action.type === "TOGGLE_EDITING") {
-
+        return {...state, editing: !state.editing }
     }
     return state;
 }
