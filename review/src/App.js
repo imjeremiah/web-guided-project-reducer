@@ -4,15 +4,19 @@ import "./styles.css";
 
 
 const add = (value) => {
-  return({type:"ADD", payload:value})
+  return({type:"ADD", payload:value});
 }
 
 const subtract = (value) => {
-  return({type:"ADD", payload:value})
+  return({type:"ADD", payload:value});
 }
 
-const addToMemory = (value) => {
-  return({type:"ADD", payload:value})
+const addToMemory = () => {
+  return({type:"ADD_TO_MEMORY"});
+}
+
+const clear = () => {
+  return({type:"CLEAR"});
 }
 
 
@@ -22,7 +26,7 @@ console.log(currentState);
 currentState = reducer(currentState, add(2));
 console.log(currentState);
 
-currentState = reducer(currentState, add(2342134213.232));
+currentState = reducer(currentState, add(3));
 console.log(currentState);
 
 // currentState = reducer(currentState, {type:"ADD", payload:10});
