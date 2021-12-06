@@ -10,6 +10,7 @@ const Title = () => {
   };
 
   const handleEditing = () => {
+    console.log("1. Handle Click of the button.");
     dispatch(toggleEditing());
   }
 
