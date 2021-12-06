@@ -1,4 +1,6 @@
 import React, { useState, useReducer } from 'react';
+import reducer, { initialState} from './../reducers';
+
 
 const Title = () => {
   const [title, setTitle] = useState('Hello earthlings!');
