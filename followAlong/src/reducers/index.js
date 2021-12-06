@@ -5,6 +5,9 @@ export const initialState = {
 }
 
 const reducer = (state, action) => {
+    if (action.type === "TOGGLE_EDITING") {
+
+    }
     return state;
 }
 
