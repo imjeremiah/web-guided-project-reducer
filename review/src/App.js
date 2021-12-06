@@ -34,6 +34,10 @@ export default function App() {
     dispatch(subtract(5));
   }
 
+  const handleClear = ()=> {
+    dispatch(clear());
+  }
+
   console.log("currentState: ", state);
 
   return (
@@ -46,7 +50,7 @@ export default function App() {
       <button onClick={handleSubtract} type="button" className="btn">
         - 5
       </button>
-      <button type="button" className="btn">
+      <button onClick={handleClear} type="button" className="btn">
         CE
       </button>
     </div>
