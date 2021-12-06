@@ -3,6 +3,7 @@ import reducer, { initialState} from './reducers/calcReducer';
 import "./styles.css";
 
 let currentState = initialState;
+console.log(currentState);
 
 
 export default function App() {
