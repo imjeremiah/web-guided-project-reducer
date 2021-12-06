@@ -1,11 +1,12 @@
 import React, { useReducer } from 'react';
 import reducer, { initialState} from './../reducers';
-import { toggleEditing } from './../actions';
+import { toggleEditing, changeNewTitle } from './../actions';
 
 const Title = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
 
   const handleChanges = e => {
+    console.log(e.target.value);
     // setNewTitleText(e.target.value);
   };
 
