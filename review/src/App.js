@@ -5,6 +5,9 @@ import "./styles.css";
 let currentState = initialState;
 console.log(currentState);
 
+currentState = reducer(currentState, {type:"ADD", payload:2});
+console.log(currentState);
+
 
 export default function App() {
   return (
