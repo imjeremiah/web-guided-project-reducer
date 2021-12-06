@@ -11,9 +11,10 @@ const reducer = (state, action) => {
     switch(action.type) {
         case TOGGLE_EDITING:
             return {...state, editing: !state.editing }
-        case(CHANGE_NEW_TITLE):
-            return {...state, editing: !state.editing }
-        case(EDIT_TITLE):
+        case CHANGE_NEW_TITLE:
+            return {...state, newTitleText: action.payload}
+        case EDIT_TITLE:
+            return {...state, editing:false, }
     }
 
     // if (action.type === TOGGLE_EDITING) {
