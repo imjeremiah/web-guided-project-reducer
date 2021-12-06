@@ -29,20 +29,14 @@ console.log(currentState);
 currentState = reducer(currentState, add(3));
 console.log(currentState);
 
-// currentState = reducer(currentState, {type:"ADD", payload:10});
-// console.log(currentState);
+currentState = reducer(currentState, subtract(20));
+console.log(currentState);
 
-// currentState = reducer(currentState, {type:"ADD", payload:3});
-// console.log(currentState);
+currentState = reducer(currentState, addToMemory());
+console.log(currentState);
 
-// currentState = reducer(currentState, {type:"SUBTRACT", payload:6});
-// console.log(currentState);
-
-// currentState = reducer(currentState, {type:"ADD_TO_MEMORY"});
-// console.log(currentState);
-
-// currentState = reducer(currentState, {type:"CLEAR"});
-// console.log(currentState);
+currentState = reducer(currentState, clear());
+console.log(currentState);
 
 
 export default function App() {
