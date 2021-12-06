@@ -7,7 +7,6 @@ const Title = () => {
 
   const handleChanges = e => {
     dispatch(changeNewTitle(e.target.value));
-    // setNewTitleText(e.target.value);
   };
 
   const handleEditing = () => {
