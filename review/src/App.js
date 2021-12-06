@@ -17,6 +17,9 @@ console.log(currentState);
 currentState = reducer(currentState, {type:"SUBTRACT", payload:6});
 console.log(currentState);
 
+currentState = reducer(currentState, {type:"ADD_TO_MEMORY"});
+console.log(currentState);
+
 export default function App() {
   return (
     <div className="App">
