@@ -6,7 +6,7 @@ const Title = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
 
   const handleChanges = e => {
-    console.log(e.target.value);
+    dispatch(changeNewTitle(e.target.value));
     // setNewTitleText(e.target.value);
   };
 
