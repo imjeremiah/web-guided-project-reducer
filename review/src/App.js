@@ -20,6 +20,10 @@ console.log(currentState);
 currentState = reducer(currentState, {type:"ADD_TO_MEMORY"});
 console.log(currentState);
 
+currentState = reducer(currentState, {type:"CLEAR"});
+console.log(currentState);
+
+
 export default function App() {
   return (
     <div className="App">
