@@ -1,5 +1,6 @@
+export const ADD = "ADD";
 export const add = (value) => {
-    return({type:"ADD_VALUE", payload:value});
+    return({type:ADD, payload:value});
 }
 
 export const subtract = (value) => {
