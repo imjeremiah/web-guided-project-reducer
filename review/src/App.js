@@ -7,6 +7,14 @@ const add = (value) => {
   return({type:"ADD", payload:value})
 }
 
+const subtract = (value) => {
+  return({type:"ADD", payload:value})
+}
+
+const addToMemory = (value) => {
+  return({type:"ADD", payload:value})
+}
+
 
 let currentState = initialState;
 console.log(currentState);
