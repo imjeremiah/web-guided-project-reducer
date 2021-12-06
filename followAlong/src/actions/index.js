@@ -6,3 +6,7 @@ export const toggleEditing = () => {
 }
 
 export const CHANGE_NEW_TITLE = "CHANGE_NEW_TITLE";
+
+export const changeNewTitle = (newTitle)=> {
+    return({type: CHANGE_NEW_TITLE, payload:newTitle});
+}
