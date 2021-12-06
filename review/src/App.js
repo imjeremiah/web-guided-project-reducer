@@ -31,7 +31,13 @@ export default function App() {
       <textarea rows="1" value={state.currentValue} id="total" type="text" name="ans"></textarea>
       <br />
       <button type="button" className="btn">
-        +
+        + 2
+      </button>
+      <button type="button" className="btn">
+        - 5
+      </button>
+      <button type="button" className="btn">
+        CE
       </button>
     </div>
   );

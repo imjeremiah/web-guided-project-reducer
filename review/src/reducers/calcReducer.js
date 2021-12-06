@@ -1,7 +1,7 @@
 import { ADD, SUBTRACT, CLEAR, ADD_TO_MEMORY} from './../actions/calcActions';
 
 export const initialState = {
-  currentValue: 331241231,
+  currentValue: 0,
   memory: 0
 }
 
