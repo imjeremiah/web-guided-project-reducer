@@ -34,6 +34,8 @@ export default function App() {
     dispatch(subtract(5));
   }
 
+  console.log("currentState: ", state);
+
   return (
     <div className="App">
       <textarea rows="1" value={state.currentValue} id="total" type="text" name="ans"></textarea>
